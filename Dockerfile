@@ -7,7 +7,7 @@ RUN apt-get update && \
   libpng-dev libjpeg-dev python libx11-dev libxext-dev
 RUN apt-get install ttf-mscorefonts-installer
 
-RUN git clone --recurse-submodules git://github.com/ariya/phantomjs.git
+RUN git clone --recurse-submodules https://github.com/ariya/phantomjs.git
 RUN cd phantomjs
 RUN git checkout 2.0.0
 RUN ./build.py
